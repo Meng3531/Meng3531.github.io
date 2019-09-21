@@ -7,35 +7,37 @@ body .whole {
   height: 100%;
   margin: 0 auto;
 }
-body .whole .top {
+body .whole .navbar {
   height: 50px;
   background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 0%;
 }
-body .whole .top .top-body {
+body .whole .navbar .container-fluid {
   width: 70%;
   height: 100%;
   margin: 0 auto;
   line-height: 50px;
   color: white;
 }
-body .whole .top .top-body .left li {
+body .whole .navbar .container-fluid .left li {
   margin-right: 50px;
 }
-body .whole .top .top-body .left li .iconfont {
+body .whole .navbar .container-fluid .left li .iconfont {
   font-size: 20px;
 }
-body .whole .top .top-body .left li .iconfont span {
+body .whole .navbar .container-fluid .left li .iconfont span {
   vertical-align: top;
   margin-left: 5px;
   font-size: 14px;
 }
-body .whole .top .top-body .right li {
+body .whole .navbar .container-fluid .right li {
   margin-right: 10px;
 }
-body .whole .top .top-body .right li .iconfont {
+body .whole .navbar .container-fluid .right li .iconfont {
   font-size: 20px;
   cursor: pointer;
 }
-body .whole .top .top-body .right .last {
+body .whole .navbar .container-fluid .right .last {
   margin-left: 10px;
 }
