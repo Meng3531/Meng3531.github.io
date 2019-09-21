@@ -1,0 +1,68 @@
+
+.length(@width,@height){
+    width: @width;
+    height: @height;
+    margin: 0 auto;
+}
+.width(@width,@height){
+    width: @width;
+    height: @height;
+}
+.font(@size){
+    font-size: @size;
+    line-height: @size;
+}
+.aStyle(){
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+body{
+    background-image: url('../img/q7.jpg');
+    background-size: cover;
+    .whole{
+        .length(100%, 100%);
+
+        .top{
+            height: 50px;
+            background: rgba(255,255,255, 0.3);
+
+            .top-body{
+                .length(70%, 100%);
+                line-height: 50px;
+                color: white;
+
+                .left{
+                    li{
+                        margin-right: 50px;
+                        .iconfont{
+                            font-size: 20px;
+                            span{
+                                vertical-align: top;
+                                margin-left: 5px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .right{
+                    li{
+                        margin-right: 10px;
+
+                        .iconfont{
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                    .last{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+

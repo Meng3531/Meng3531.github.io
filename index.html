@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- 引入外部文件 -->
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <!-- 自定义 -->
+    <link rel="stylesheet" href="./css/Home.css">
+
 </head>
+
 <body>
-    <h1>王</h1>
-    <p>十八新娘八十郎</p>
-    <p>白发苍苍对红妆</p>
+    <!-- 页面整体 -->
+    <div class="whole">
+        <!-- 页面头部 -->
+        <div class="top">
+            <div class="top-body row">
+                <div class="col-lg-8">
+                    <ul class="float left">
+                        <li>
+                            <i class="iconfont icon-dianhua"><span>18238189697</span></i>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-youxiang"><span>Meng3531@gmail.com</span></i>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-shijian"><span id="top-time"></span></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class=".col-lg-4">
+                    <ul class="float right">
+                        <li>
+                            <i class="iconfont icon-qq"></i>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-weixin"></i>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-Sina"></i>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-git"></i>
+                        </li>
+                        <li class="last">
+                            <input class="btn btn-success" type="button" value="登录">
+                            <input class="btn btn-default" type="button" value="注册">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    // 入口函数
+    $(function () {
+        // 给头部设置时间
+        $('#top-time').text(new Date().toLocaleTimeString());
+        setInterval(function () {
+            $('#top-time').text(new Date().toLocaleTimeString());
+        }, 1000);
+    });
+</script>
+
 </html>
