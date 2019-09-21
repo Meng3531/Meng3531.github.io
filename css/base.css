@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.clearfix::before,.clearfix::after{
+    display: block;
+    content: "";
+}
+.clearfix::after{
+    clear: both;
+}
+input,button{
+    border: none;
+    outline: none;
+}
+i{
+    font-style: normal;
+}
+img{
+    vertical-align: middle;
+}
+.left{
+    float: left;
+    display: block;
+}
+.right{
+    float: right;
+    display: block;
+}
+.float>li{
+    float: left;
+}
