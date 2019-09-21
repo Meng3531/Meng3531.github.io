@@ -22,6 +22,7 @@
 
 body{
     background-image: url('../img/q7.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     .whole{
         .length(100%, 100%);
@@ -36,7 +37,16 @@ body{
                 .length(70%, 100%);
                 line-height: 50px;
                 color: white;
+                .navbar-header{
 
+                    .collapsed,.navbar-toggle{
+                        float: left;
+                    }
+                }
+
+                >.navbar-collapse{
+                    border: none;
+                }
                 .left{
                     li{
                         margin-right: 50px;
@@ -67,4 +77,22 @@ body{
         }
     }
 }
+@media screen and (max-width:768px){
+    .whole{
+        .length(100%, 100%);
 
+        .navbar{
+            
+            .container-fluid{
+                .navbar-header{
+                >.right{
+                    display: block;
+                } 
+            }
+                .right{
+                    display: none;
+                }
+            }
+        }
+    }
+}
